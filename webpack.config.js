@@ -2,7 +2,7 @@ const path = require('path')
 
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
-
+var CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
   entry: './src/app.js',
@@ -41,7 +41,8 @@ module.exports = {
     ]
   },
 
-  plugins: [new ExtractTextPlugin("styles.[hash].css"),
+  plugins: [new CleanWebpackPlugin('dist', {dry: false, verbose: true}),
+            new ExtractTextPlugin("styles.[hash].css"),
             new HtmlWebpackPlugin(
                    {title: "react test app",
                     inject: false,

@@ -9,6 +9,10 @@ import { Clock } from './clock'
 
 import { Comment } from './comment'
 
+import { WelcomeApp } from './welcome'
+
+import { Border } from './border'
+
 /*
 function formatName(user) {  
   return user.firstName + ' ' + user.lastName;
@@ -34,20 +38,6 @@ ReactDOM.render(
 
 
 /*
-function Welcome(props) {
-  return <h1>Hello, {props.name}</h1>;
-}
-
-function App() {
-  return (
-    <div>
-      <Welcome name="Sara" />
-      <Welcome name="Cahal" />
-      <Welcome name="Edite" />
-    </div>
-  );
-}
-
 
 ReactDOM.render(
   <App/>,
@@ -75,12 +65,13 @@ const comment = {
 
 ReactDOM.render(
     <div>
-        <Clock/>
-        <NumberList numbers={numbers} />
-        <Comment
+        <Border><WelcomeApp/></Border>
+        <Border><Clock/></Border>
+        <Border><NumberList numbers={numbers} /></Border>
+        <Border><Comment
                 date={comment.date}
                 text={comment.text}
-                author={comment.author} />
+                author={comment.author} /></Border>
     </div>,
     document.getElementById('root')
 );

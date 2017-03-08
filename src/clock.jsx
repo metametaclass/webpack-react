@@ -13,7 +13,7 @@ export class Clock extends React.Component {
     return (
       <div>
         <Toggle />
-        <h1>Hello, world!</h1>
+        <h1>Hello, world! I`m Clock component</h1>
         <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
         <div>{this.state.counter}</div>
       </div>

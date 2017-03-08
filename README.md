@@ -13,7 +13,9 @@
  npm install --save-dev style-loader css-loader
  npm install --save-dev extract-text-webpack-plugin
  npm install --save-dev html-webpack-plugin
- npm install html-webpack-template --save-dev
+ npm install --save-dev html-webpack-template 
+ npm install --save-dev html-webpack-template 
+ npm install --save-dev clean-webpack-plugin 
 ```
 
 
