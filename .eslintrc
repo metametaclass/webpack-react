@@ -59,7 +59,6 @@ rules:
   no-case-declarations: 1
   no-div-regex: 1
   no-else-return: 0
-  no-empty-label: 1
   no-empty-pattern: 1
   no-eq-null: 1
   no-eval: 1
@@ -71,7 +70,7 @@ rules:
   no-implied-eval: 1
   no-invalid-this: 0
   no-iterator: 1
-  no-labels: 0
+  no-labels: 1
   no-lone-blocks: 1
   no-loop-func: 1
   no-magic-number: 0

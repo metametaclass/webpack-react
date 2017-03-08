@@ -7,11 +7,16 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
   entry: './src/app.js',
   devtool: 'source-map',
+
+  resolve: {
+    extensions: ['.js', '.jsx'] //'*' for explicit extensions?
+  },
+
   module: {
 
     rules: [
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
         query: { presets: [ ['es2015', { "modules": false }], 'react' ] }
@@ -22,7 +27,7 @@ module.exports = {
         loader: ExtractTextPlugin.extract("css-loader")
       }, 
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         use: [
           { loader: "eslint-loader",
