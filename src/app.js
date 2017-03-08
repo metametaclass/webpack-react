@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import styles from './app.css'
 
 function formatName(user) {
   console.log("test");
