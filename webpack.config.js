@@ -1,22 +1,17 @@
+const path = require('path')
+
 module.exports = {
   entry: './src/app.js',
-  output: {
-    path: __dirname,
-    filename: 'bundle.js'
-  },
   devtool: 'source-map',
   module: {
-    loaders: [
+
+    rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
-        query: { presets: [ 'es2015', 'react' ] }
-      },
-      
-    ],
-
-    rules: [
+        query: { presets: [ ['es2015', { "modules": false }], 'react' ] }
+      }, 
       {
         test: /\.js$/,
         exclude: /node_modules/,
@@ -33,8 +28,8 @@ module.exports = {
   },
 
   output: {
-        filename: 'public/[name].js'
-  },
-
+    path: path.resolve(__dirname, 'public'),
+    filename: '[name].bundle.js'
+  }
 
 };
