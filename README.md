@@ -16,6 +16,27 @@
  npm install html-webpack-template --save-dev
 ```
 
+
+## Used modules
+
+React:
+https://facebook.github.io/react/docs/installation.html
+
+Webpack:
+https://webpack.js.org/concepts/
+
+Babel:
+https://babeljs.io/
+https://babeljs.io/docs/plugins/preset-react/
+
+Eslint:
+http://eslint.org/docs/user-guide/integrations#build-systems
+https://www.npmjs.com/package/eslint-loader
+
+Plugin for main html file generation:
+https://www.npmjs.com/package/html-webpack-plugin
+
+Extended template for html file generation:
 https://github.com/jaketrent/html-webpack-template
 
 
