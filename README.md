@@ -1,3 +1,8 @@
+# Experimental js (react+babel+webpack+eslint) project
+
+
+## Initialization steps
+
 npm init
 npm install -save react react-dom
 npm install --save-dev webpack
@@ -11,3 +16,12 @@ npm install --save-dev html-webpack-plugin
 
 rem https://github.com/jaketrent/html-webpack-template
 npm install html-webpack-template --save-dev
+
+
+
+## Installation Steps
+
+1. Clone repo
+2. Run `npm install`
+3. Run `npm run build`
+4. Open `dist/index.html` in your browser
